@@ -6,80 +6,88 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/flower.css" />
     <style>
-      /* Estilos adicionales para centrar el video y separar el flower */
+      /* Contenedor flex para alinear el video y el flower horizontalmente */
+      .container {
+        display: flex;
+        align-items: center; /* Alinea verticalmente al centro */
+        justify-content: center; /* Centra horizontalmente */
+        gap: 20px; /* Espacio entre el video y el flower */
+        margin-top: 20px; /* Margen superior para separar del texto */
+      }
+
+      /* Estilos para el video */
       video {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%; /* Asegura que el video no sea más ancho que su contenedor */
+        max-width: 50%; /* Ajusta el ancho del video */
+        height: auto; /* Mantiene la proporción del video */
       }
 
-      .flower {
-        margin-top: 20px; /* Añade un margen superior para separar el flower del video */
-      }
-
+      /* Estilos para el texto de agradecimiento */
       #thankyou {
-        text-align: center; /* Centra el texto de agradecimiento */
-        margin-bottom: 20px; /* Añade un margen inferior para separar del video */
+        text-align: center; /* Centra el texto */
+        margin-bottom: 20px; /* Margen inferior para separar del contenedor */
       }
     </style>
   </head>
   <body>
     <div id="thankyou"><b>Muchas gracias por ser mi novia, preciosa (っ˘з(˘⌣˘ )</b></div>
 
-    <video controls>
-      <source src="bailando.mp4" type="video/mp4">
-      Tu navegador no soporta el video adjunto.
-    </video>
+    <!-- Contenedor flex para el video y el flower -->
+    <div class="container">
+      <video controls>
+        <source src="bailando.mp4" type="video/mp4">
+        Tu navegador no soporta el video adjunto.
+      </video>
 
-    <div class="flower">
-      <div class="f-wrapper">
-        <div class="flower__line"></div>
-        <div class="f">
-          <div class="flower__leaf flower__leaf--1"></div>
-          <div class="flower__leaf flower__leaf--2"></div>
-          <div class="flower__leaf flower__leaf--3"></div>
-          <div class="flower__leaf flower__leaf--4"></div>
-          <div class="flower__leaf flower__leaf--5"></div>
-          <div class="flower__leaf flower__leaf--6"></div>
-          <div class="flower__leaf flower__leaf--7"></div>
-          <div
-            class="flower__leaf flower__leaf--8 flower__fall-down--yellow"
-          ></div>
+      <div class="flower">
+        <div class="f-wrapper">
+          <div class="flower__line"></div>
+          <div class="f">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+            <div class="flower__leaf flower__leaf--3"></div>
+            <div class="flower__leaf flower__leaf--4"></div>
+            <div class="flower__leaf flower__leaf--5"></div>
+            <div class="flower__leaf flower__leaf--6"></div>
+            <div class="flower__leaf flower__leaf--7"></div>
+            <div
+              class="flower__leaf flower__leaf--8 flower__fall-down--yellow"
+            ></div>
+          </div>
         </div>
-      </div>
 
-      <div class="f-wrapper f-wrapper--2">
-        <div class="flower__line"></div>
-        <div class="f">
-          <div class="flower__leaf flower__leaf--1"></div>
-          <div class="flower__leaf flower__leaf--2"></div>
-          <div class="flower__leaf flower__leaf--3"></div>
-          <div class="flower__leaf flower__leaf--4"></div>
-          <div class="flower__leaf flower__leaf--5"></div>
-          <div class="flower__leaf flower__leaf--6"></div>
-          <div class="flower__leaf flower__leaf--7"></div>
-          <div
-            class="flower__leaf flower__leaf--8 flower__fall-down--pink"
-          ></div>
+        <div class="f-wrapper f-wrapper--2">
+          <div class="flower__line"></div>
+          <div class="f">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+            <div class="flower__leaf flower__leaf--3"></div>
+            <div class="flower__leaf flower__leaf--4"></div>
+            <div class="flower__leaf flower__leaf--5"></div>
+            <div class="flower__leaf flower__leaf--6"></div>
+            <div class="flower__leaf flower__leaf--7"></div>
+            <div
+              class="flower__leaf flower__leaf--8 flower__fall-down--pink"
+            ></div>
+          </div>
         </div>
-      </div>
 
-      <div class="f-wrapper f-wrapper--3">
-        <div class="flower__line"></div>
-        <div class="f">
-          <div class="flower__leaf flower__leaf--1"></div>
-          <div class="flower__leaf flower__leaf--2"></div>
-          <div class="flower__leaf flower__leaf--3"></div>
-          <div class="flower__leaf flower__leaf--4"></div>
-          <div class="flower__leaf flower__leaf--5"></div>
-          <div class="flower__leaf flower__leaf--6"></div>
-          <div class="flower__leaf flower__leaf--7"></div>
-          <div
-            class="flower__leaf flower__leaf--8 flower__fall-down--purple"
-          ></div>
+        <div class="f-wrapper f-wrapper--3">
+          <div class="flower__line"></div>
+          <div class="f">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+            <div class="flower__leaf flower__leaf--3"></div>
+            <div class="flower__leaf flower__leaf--4"></div>
+            <div class="flower__leaf flower__leaf--5"></div>
+            <div class="flower__leaf flower__leaf--6"></div>
+            <div class="flower__leaf flower__leaf--7"></div>
+            <div
+              class="flower__leaf flower__leaf--8 flower__fall-down--purple"
+            ></div>
+          </div>
         </div>
+        <div class="flower__glass"></div>
       </div>
-      <div class="flower__glass"></div>
     </div>
   </body>
 </html>
